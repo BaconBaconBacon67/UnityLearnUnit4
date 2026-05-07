@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6304175682209433716}
   - component: {fileID: 5130192468600856308}
   - component: {fileID: 3504594552492961773}
+  - component: {fileID: 252486566631328651}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -153,4 +154,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a0f7e3f18565a47bac324d83f30545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
-  speed: 0
+  speed: 3
+--- !u!114 &252486566631328651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7546520027770662051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b945f168a550bfb4ea3f22f4593861ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
+  spawnRange: 9
+  enemyPrefab: {fileID: 7546520027770662051}
+  waveNumber: 1
+  powerupPrefab: {fileID: 4161272091925345270, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+  enemyCount: 0

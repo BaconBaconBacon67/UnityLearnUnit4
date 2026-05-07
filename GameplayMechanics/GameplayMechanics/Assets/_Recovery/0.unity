@@ -476,9 +476,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   spawnRange: 9
   enemyPrefab: {fileID: 7546520027770662051, guid: b83c26869b9cfe24cafd4dd49a6a29a9, type: 3}
-  waveNumber: 0
-  powerupPrefab: {fileID: 4161272091925345270, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
-  enemyCount: 0
 --- !u!1 &1211016355
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +894,75 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
   m_PrefabInstance: {fileID: 543865681}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4541686962047775126
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.39615
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.65736
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294758310229330363, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4161272091925345270, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
+      propertyPath: m_Name
+      value: PowerUp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b958f10d506a1234c96c562d9d670b7b, type: 3}
 --- !u!1001 &7305732181041295649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -905,6 +971,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5831814716121893815, guid: 363a8f737719f4d2eafb35f885f3706f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5831814716121893815, guid: 363a8f737719f4d2eafb35f885f3706f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -965,4 +1035,5 @@ SceneRoots:
   - {fileID: 459890799}
   - {fileID: 1805008073}
   - {fileID: 631767297}
+  - {fileID: 4541686962047775126}
   - {fileID: 543865681}
