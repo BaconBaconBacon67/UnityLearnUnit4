@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     private Rigidbody playerRb;
-    private float speed = 500;
     private GameObject focalPoint;
 
     public bool hasPowerup;
@@ -14,7 +13,11 @@ public class PlayerControllerX : MonoBehaviour
 
     private float normalStrength = -10; // how hard to hit enemy without powerup
     private float powerupStrength = -20; // how hard to hit enemy with powerup
-    
+
+    public float speed = 500;
+    public float boostAmount = 550;
+    public ParticleSystem boostParticles;
+
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
@@ -29,6 +32,13 @@ public class PlayerControllerX : MonoBehaviour
 
         // Set powerup indicator position to beneath player
         powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);
+
+        //speed boost
+        if (Input.GetKey(KeyCode.Space))
+        {
+            playerRb.AddForce(focalPoint.transform.forward * boostAmount, ForceMode.Impulse);
+            boostParticles.Play();
+        }
 
     }
 
